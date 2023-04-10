@@ -11,7 +11,7 @@
 }
 
 .termsTop {
-  background: url("/images/terms.jpg");
+  background: url("../../airline-images/terms.jpg");
   min-height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
