@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../landingPage.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <title>Hotel Landing Page</title>
+  </head>
+  <body>
+    <!-- main modal start -->
+    <!-- <div class="main-modal">
+      <div class="child-modal">
+        <h2><i class="bi bi-x-circle" onclick="closeModal()"></i></h2>
+        <div class="box">
+          <h3 class="childModal-logo">Enter Your Zip Code</h3>
+          <p class="childModal-text">Get Free Quote</p>
+          <input
+            name="zipField"
+            type="number"
+            placeholder="Please Enter Zip code"
+          />
+          <button class="submit-btn" onclick="goFormPage()">Submit</button>
+        </div>
+      </div>
+    </div> -->
+    <!-- main modal end -->
+    <header class="main-nav">
+      <div class="navbar wrapper">
+        <img src="../images/logo.png" alt="" width="150px" />
+
+        <div class="nav-right">
+          <p class="abbrevation-logo">
+            CALL:
+            <span class="callLogo"
+              >(TTY)
+              <a href="tel:(915) 205-6373" class="callLogo"
+                >(915) 205-6373</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <div class="Hotel-heroSection">
+      <div class="heroContent">
+        <h1 class="heroTextSlogen">Make Your-Self At Home</h1>
+        <h1 class="slogen-2">Redefine Your Expectations</h1>
+        <h1 class="slogen-3">A hotel experience, unlike the rest</h1>
+      </div>
+
+      <img class="hero-img" src="hotel bg.png" alt="" />
+    </div>
+
+    <!-- Hotel form is start -->
+    <section class="form-topsection">
+      <h1>Form Credentials</h1>
+    </section>
+    <div class="form-backcolor">
+      <div class="form">
+        <label>First name</label>
+        <input
+          class="first-name"
+          name="first-name"
+          type="text"
+          placeholder="Enter Your First Name"
+        />
+
+        <label>Last Name</label>
+        <input
+          class="last-name"
+          name="last-name"
+          type="text"
+          placeholder="Enter Your Last Name"
+        />
+
+        <label>Phone Number</label>
+        <input
+          class="phn-no"
+          name="phn-no"
+          type="text"
+          placeholder="Enter Your Phone Number"
+        />
+
+        <label>State</label>
+        <input
+          class="state"
+          name="state"
+          type="text"
+          placeholder="Enter Your State"
+        />
+
+        <label>Zip Code</label>
+        <input
+          class="zip-code"
+          name="zip-code"
+          type="text"
+          placeholder="Enter Zip Code"
+        />
+
+        <label>DOB/AGE</label>
+        <input
+          class="dob-age"
+          name="dob-age"
+          type="text"
+          placeholder="Enter Your Age Name"
+        />
+
+        <label for="accept" class="lastLabel">
+          <input class="checkBox" type="checkbox" id="accept" />
+          &nbsp; &nbsp;By selecting check box, you represent that you are 18+
+          years of age and agree to the <a href="#">Privacy Policy</a> and
+          <a href="#">Terms &amp; Conditions.</a> By selecting the above check
+          box "you agree by your electronic signature that you give express
+          written consent to receive marketing communications regarding
+          insurance products and services including but not limited to Medicare
+          Advantage, Medicare supplement, and prescription drug plans by
+          automatic dialing system and pre-recorded calls and artificial voice
+          messages from eqexpertz.com and one or more of its
+          <a href="#">Marketing Partners</a> at the phone number and e-mail
+          address provided by you, including wireless numbers, if applicable,
+          even if you have previously registered the provided number on the Do
+          Not Call Registry. SMS/MMS and data messaging rates may apply.” Your
+          consent is not required to get a quote or purchase. To receive quotes
+          without providing consent, please call at (888) 378-0750. Carrier data
+          rates may apply. TCPA LeadID's are used with the information for
+          compliance. Consent can be revoked
+        </label>
+        <button class="form-sendbtn">Send Message</button>
+      </div>
+    </div>
+    <!-- Hotel form is end -->
+
+    <!-- <div class="layout wrapper">
+      <h1 class="service-logo">Services</h1>
+
+      <div class="feature-section">
+        <div class="feature-card">
+          <img class="image-service-style" src="./2.png.jpeg" />
+          <div class="description">
+            <p class="service-content">Discount & Room Service</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <img class="image-quality-food" src="./food.jpeg" />
+          <div class="description">
+            <p class="service-content">Quality Food</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <img class="image-service-style" src="./drop.jpeg" />
+          <div class="description">
+            <p class="service-content">Pick & Drop</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <img class="image-service-style" src="./minibar.jpg" />
+          <div class="description">
+            <p class="service-content">Mini Bar</p>
+          </div>
+        </div>
+      </div>
+      <h1 class="service-logo">Features</h1>
+      <div class="feature-section">
+        <div class="feature-card">
+          <p class="room-category">Air Conditioning</p>
+          <img class="image-feature-style" src="./acc.jpg" alt="" />
+        </div>
+
+        <div class="feature-card">
+          <p class="room-category">Free Wifi</p>
+          <img class="image-feature-style" src="./wifi.jpg" alt="" />
+        </div>
+
+        <div class="feature-card">
+          <p class="room-category">Flat Screen</p>
+          <img class="image-feature-style" src="./tv.webp" alt="" />
+        </div>
+
+        <div class="feature-card">
+          <p class="room-category">Parking Place</p>
+          <img class="image-feature-style" src="./Parking.jpeg" alt="" />
+        </div>
+      </div>
+    </div> -->
+
+    <div class="section-detail wrapper">
+      <div class="section-left-content">
+        <h1 class="section-heading">How we Work</h1>
+        <p class="section-detail-text">
+          Welcome, we want to give you a glimpse into our process so you can
+          understand how we provide our services to our valued customers.<br />
+          <strong>Hotel Selection:</strong><br />
+          We carefully select hotels based on their quality, amenities, and
+          location. We work with hotels that offer a range of budgets and styles
+          to cater to all types of travellers.
+        </p>
+      </div>
+      <div class="section-right-content">
+        <img src="../images/2.png.jpeg" alt="" width="100%" height="562px" />
+      </div>
+    </div>
+
+    <marquee attribute_name="attribute_value" class="marquee">
+      <h1>
+        Call us to speak to a licensed insurance agent!
+        <a href="tel:(915) 205-6373" class="number">(TTY) (915) 205-6373</a>
+      </h1>
+    </marquee>
+
+    <!-- last label wrapper -->
+    <!-- yyyy -->
+
+    <section class="hotel-last wrapper1">
+      <h1>
+        So why wait? Start planning your next adventure today with Eq Travels!
+      </h1>
+    </section>
+
+    <!-- last wrapper end -->
+    <footer class="footr">
+      <div class="footr-content">
+        <div class="footr-partners">
+          <a href="" class="footr-text">Our Patners</a>
+
+          <a href="" class="footr-text">Terms & Conditions</a>
+        </div>
+        <div class="footr-logo">
+          <a href="#">EQExpertz</a>
+          <span class="footr-text">2023.All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="hotel-code.js"></script>
+  </body>
+</html>

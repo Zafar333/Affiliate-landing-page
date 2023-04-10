@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.termsTop {
+  background: url("/images/terms.jpg");
+  min-height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 700;
+}
+
+.conditions {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  flex-direction: column;
+  max-width: 1000px;
+  margin-top: 100px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+
+.conditions div {
+  margin-top: 40px;
+}
+
+.conditions div h1 {
+  margin-bottom: 10px;
+}
+
+.text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+@media (max-width: 468px) {
+  .text {
+    font-size: 2rem;
+  }
+}

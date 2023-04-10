@@ -1,0 +1,1194 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&family=Pragati+Narrow&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.form-sendbtn {
+ font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+              Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+              Segoe UI Symbol, Noto Color Emoji;
+  width: 124px;
+  color: #ffffff;
+  height: 43px;
+  background-color: #0d6efd;
+  border: none;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.form-backcolor {
+  
+  padding: 7rem 10rem;
+  background-color: rgba(33, 37, 41, 7);
+}
+.form-heroSection {
+
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+.form {
+  margin: 0 auto;
+  width: 100%;
+  height: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form label {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  font-size: 18px;
+  color: #ffffff;
+}
+.form .lastLabel {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.form input {
+  height: 48px;
+  width: 100%;
+  border: 3px solid #a7b7c7;
+  border-radius: 0.25rem;
+}
+.form input.checkBox {
+  width: 30px;
+  height: 20px;
+}
+h2 i{
+    cursor: pointer;
+}
+.main-modal {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  display: none;
+}
+.childModal-logo {
+  font-size: 20px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  color: #54595e;
+  margin: 0px 8px;
+}
+.childModal-text {
+  font-size: 14px;
+  color: #54595e;
+  margin: 0px 24px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+.box {
+  border: 1px solid white;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+}
+.box input {
+  border: 1px solid #d1d1d1;
+  background-color: transparent;
+  border-radius: 8px;
+  width: 383px;
+  height: 43px;
+}
+.box button {
+  width: 383px;
+  height: 49px;
+  font-size: 14px;
+  padding: 14px 0px;
+  border-radius: 8px;
+  color: #f5f5f5;
+  background-color: #4f4f4f;
+  cursor: pointer;
+}
+.child-modal {
+  position: relative;
+  left: 38%;
+  top: 20%;
+  width: 565px;
+  height: 270px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.child-modal h2 {
+  position: relative;
+  left: 93%;
+  top: 2%;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+
+}
+.wrapper1 {
+  width: 1440px;
+  margin: auto;
+}
+.form-topsection{
+    
+    position: relative;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 14px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.form-topsection h1{
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+  Segoe UI Symbol, Noto Color Emoji;
+  font-size: 4rem;
+  color: white;
+}
+.hotel-last{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./airline-images/world.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 25vh;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border: 1px solid black;
+  border-radius: 100px;
+
+}
+.hotel-last h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 72px;
+  text-align: center;
+  max-width: 40ch;
+  color:white;
+}
+.marquee {
+  min-height: 150px;
+  background: #f8f9fa;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.marquee h1 {
+  color: rgb(92, 92, 92);
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+  Segoe UI Symbol, Noto Color Emoji;
+  
+}
+.marquee h1 a {
+  text-decoration: none;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+  Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+  Segoe UI Symbol, Noto Color Emoji;
+  color: red;
+}
+
+.navbar {
+  background-color: rgb(248, 249, 250, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 58.8px;
+}
+.main-nav {
+  position: relative;
+  left: 0;
+  background-color: rgb(248, 249, 250, 1);
+}
+.footr-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footr-partners {
+  display: flex;
+  gap: 20px;
+}
+.callLogo {
+  text-decoration: none;
+  color: red;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.abbrevation-logo {
+  font-size: 1.8rem;
+  font-family: "Pragati Narrow", sans-serif;
+}
+.phn-icon {
+  font-size: 16px;
+  font-family: "Pragati Narrow", sans-serif;
+}
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.Hotel-heroSection {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.Hotel-heroSection::before{
+  content: "";
+  position: absolute;
+  background-image: url("./images/hotel-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hero-section::before{
+  content: "";
+  position: absolute;
+  background-image: url("./images/main-hero-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.Hotel-heroSection::after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.hero-section::after{
+  content: "";
+  position: absolute;
+ background-color: black;
+ opacity: 0.5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.grp-btn{
+  display: flex;
+  gap: 30px;
+}
+.heroContent {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 40;
+}
+.heroTextSlogen {
+  color: #ffffff;
+  font-size: 48px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  background-color:#ffb84d;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 20px;
+  width: 201px;
+  color: black;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  height: 62px;
+  /* border: 1px solid #FFEDD8; */
+}
+.last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/world.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  min-height: 60vh;
+  margin-top: 80px;
+  border-radius: 100px;
+}
+.aboutus-section {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../airline-images/world.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20vh;
+  margin: 120px auto;
+  border-radius: 100px;
+  
+}
+.aboutz-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+}
+
+.about-intro-text {
+  max-width: 100ch;
+  color: #ffffff;
+  line-height: 3ch;
+  font-size: 20px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  text-align: justify;
+}
+.about-logo {
+  
+  color: #ffffff;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+
+.about-intro {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  font-size: 16px;
+  color: #212529;
+  font-weight: light;
+}
+.feature-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 350px;
+  /* border:1px solid black; */
+}
+.service-logo {
+  font-size: 30px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  color: #212529;
+  text-align: center;
+  padding: 8px 14px;
+  border-radius: 4px;
+  background-color: rgb(228, 154, 26);
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+  align-items: center;
+  margin: 120px auto;
+  background-color: rgb(248, 249, 250);
+}
+.feature-card {
+  display: flex;
+  width: 240px;
+  height: 300px;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+.description {
+  padding: 8px 0px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.service-content {
+  margin: 8px 0px;
+  font-size: 20px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+.room-category {
+  padding: 16px 0px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  text-align: center;
+  background-color: black;
+  color: #ffffff;
+}
+.section-detail {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+  min-height: 562px;
+  margin: 60px auto;
+  /* border: 1px solid yellow; */
+}
+.section-left-content {
+  flex: 1;
+
+  /* border: 1px solid red; */
+}
+.section-left-content h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+.section-right-content {
+  flex: 1;
+  height: 562px;
+  /* border: 1px solid rgb(17, 15, 15); */
+}
+.section-right-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.section-left-content .section-detail-text {
+  font-size: 1.25rem;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: justify;
+}
+.section-conditions {
+  padding: 112px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 270px;
+  background-color: rgb(248, 249, 250);
+  /* border:1px solid black */
+}
+.image-quality-food {
+  width: 240px;
+  height: 233px;
+  border-radius: 8px;
+}
+.text {
+  font-size: 20px;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  color: #212529;
+}
+.section-detail-text {
+  color: #212529;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+.designBox {
+  width: fit-content;
+  height: fit-content;
+}
+.slogen-1 {
+  font-size: 16px;
+  opacity: 0.8;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  color: #f5f5f5;
+}
+.slogen-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slogen-2 {
+  padding-top: 15px;
+  font-size: 20px;
+  line-height: 3ch;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  
+  color: #ffb84d;
+}
+.slogen-3 {
+  font-size: 20px;
+  line-height: 3ch;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  color: #f5f5f5;
+}
+.footr1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  background-color: rgb(248, 249, 250, 1);
+}
+.footr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 150px;
+  background-color: #212529;
+}
+.footr-text {
+  color: #6c757d;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+}
+
+.about-logo {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
+  color:#ffffff;
+  font-size: 40px;
+}
+.image-service-style {
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+}
+.image-feature-style {
+  width: 240px;
+  height: 230px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1600px) {
+  .wrapper {
+    width: 1300px;
+  }
+  .wrapper1 {
+    width: 1300px;
+  }
+  .footr {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+  .section-right-content img {
+    height: 500px;
+    border-radius: 10px;
+  }
+}
+
+
+@media (max-width: 1300px) {
+  .heroTextSlogen {
+    font-size: 40px;
+  }
+
+  .marquee h1{
+    font-size: 30px;
+  }
+  .wrapper {
+    max-width: 1000px;
+  }
+  .wrapper1 {
+    width: 1000px;
+  }
+  .form-topsection h1{
+      font-size: 3rem;
+  
+  }
+  .callLogo {
+    font-size: 24px;
+  }
+  .feature-section {
+    width: 95%;
+  }
+  .image-feature-style {
+    width: 180px;
+  }
+  .image-service-style {
+    width: 180px;
+  }
+  .image-quality-food {
+    width: 180px;
+    border-radius: 8px;
+  }
+  .footr {
+    margin-bottom: 0;
+  }
+  .description {
+    max-width: 180px;
+    height: 65px;
+    font-size: 17px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .room-category {
+    padding: 16px 0px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  .feature-card {
+    width: 180px;
+  }
+  .feature-section {
+    justify-content: space-evenly;
+  }
+  .section-right-content img {
+    border-radius: 30px;
+    height: 500px;
+  }
+  .footr {
+    margin: 60px auto;
+  }
+}
+
+@media (max-width: 1100px) {
+  .heroTextSlogen {
+    font-size: 37px;
+  }
+  .form-topsection h1{
+    font-size: 2.5rem;
+
+}
+  .hotel-last h1{
+    font-size: 2.5rem;
+  }
+  .wrapper {
+    max-width: 900px;
+  }
+  .wrapper1 {
+    width: 900px;
+  }
+  .feature-section {
+    width: 90%;
+  }
+  .image-feature-style {
+    object-fit: cover;
+    object-position: center;
+    width: 180px;
+    height: 184px;
+    border-radius: 8px;
+  }
+  .image-service-style {
+    width: 180px;
+    border-radius: 8px;
+  }
+  .image-quality-food {
+    width: 180px;
+    height: 189px;
+    /* border-radius:8px */
+  }
+
+  .feature-card {
+    width: 180px;
+    height: 250px;
+  }
+  .service-content {
+    font-size: 14px;
+  }
+  .heroTextSlogen {
+    font-size: 30px;
+  }
+  .about-intro-text {
+    width: 700px;
+    font-size: 17px;
+  }
+  .hero-btn {
+
+    margin-top: 40px;
+    font-size: 18px;
+    width: 190px;
+    height: 60px;
+  }
+  .section-left-content .section-detail-text {
+    max-width: 40ch;
+  }
+  .footr {
+    margin-bottom: 0;
+  }
+  .layout{
+    height: 650px;
+  }
+}
+@media (max-width: 980px) {
+
+  .layout{
+    height: fit-content;
+  }
+  .wrapper {
+    max-width: 700px;
+  }
+  .wrapper1 {
+    width: 700px;
+  }
+  .feature-section {
+    max-width: 80%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+  }
+  .section-right-content img {
+    height: 410px;
+  }
+  .section-right-content h1 {
+    font-size: 35px;
+  }
+  .section-right-content {
+    display: flex;
+    align-items: center;
+  }
+  .about-intro-text {
+    max-width: 68ch;
+    font-size: 16px;
+  }
+
+  .image-feature-style {
+    width: 240px;
+    height: 192px;
+    /* border-radius:8px */
+  }
+  .image-service-style {
+    width: 240px;
+    border-radius: 8px;
+  }
+  .image-quality-food {
+    width: 240px;
+    border-radius: 8px;
+  }
+  .navbar {
+    padding: 8px 0px;
+  }
+
+  .feature-card {
+    /* border: 1px solid black; */
+    width: 242px;
+  }
+  .description {
+    max-width: 240px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .footr {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  .room-category {
+    padding: 16px 0px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  .form-topsection h1{
+    font-size: 2rem;
+    line-height: 1.5;
+
+}
+  .abbrevation-logo {
+    font-size: 18px;
+  }
+  .hotel-last {
+    width: 100%;
+    border-radius: 0px;
+  }
+  
+  
+  .hotel-last h1 {
+    font-size: 2rem;
+    line-height: 50px;
+  }
+  .marquee h1{
+    font-size: 28px;
+  }
+  .callLogo {
+    font-size: 20px;
+  }
+  .heroTextSlogen {
+    font-size: 25px;
+  }
+  .about-intro-text {
+    width: 60ch;
+    font-size: 14px;
+  }
+  .hero-btn {
+    font-size: 16px;
+    width: 170px;
+    height: 50px;
+  }
+  .feature-section {
+    height: 1200px;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 112px;
+    justify-content: space-between;
+  }
+  .section-right-content img {
+    height: 310px;
+  }
+  .section-left-content .section-detail-text {
+    max-width: 20ch;
+    font-size: 16px;
+  }
+  .section-right-content {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(17, 15, 15); */
+  }
+  .section-left-content h1 {
+    font-size: 30px;
+  }
+  .navbar {
+    justify-content: space-evenly;
+  }
+
+  .wrapper {
+    width: 600px;
+  }
+ 
+  .heroContent {
+    left: 35%;
+  }
+  .footr-content {
+    justify-content: space-evenly;
+  }
+  .footr-text {
+    font-size: 14px;
+  }
+  .footr {
+    margin-bottom: 0;
+  }
+  .form-backcolor {
+    padding: 7rem 6rem;
+    background-color: rgba(33, 37, 41, 1);
+  }
+  .form .lastLabel {
+    font-size: 12px;
+  }
+  .form-sendbtn {
+    width: 110px;
+    height: 30px;
+  }
+  .slogen-1 {
+    font-size: 16px;
+  }
+  .slogen-2 {
+    font-size: 22px;
+    line-height: 3ch;
+  }
+  .slogen-3 {
+    font-size: 22px;
+    line-height: 3ch;
+  }
+}
+@media (max-width: 600px) {
+  .form-topsection h1{
+    font-size: 1.8rem;
+
+}
+  .footr-content {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footr-partners {
+    display: flex;
+    flex-direction: column;
+  }
+  .hotel-last h1 {
+    font-size: 1.5rem;
+    line-height: 50px;
+  }
+  .footr-text {
+    font-size: 12px;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .wrapper {
+    max-width: 450px;
+  }
+  .callLogo {
+    font-size: 18px;
+  }
+  .heroContent {
+    left: 30%;
+  }
+  .heroTextSlogen {
+    font-size: 25px;
+  }
+  .hero-btn {
+    text-align: center;
+    font-size: 15px;
+    width: 120px;
+    height: 50px;
+  }
+  .about-intro-text {
+    max-width: 50ch;
+  }
+  .aboutus-section {
+    padding: 40px 4px;
+  }
+
+  .footr {
+    margin-bottom: 0;
+  }
+  .form-backcolor {
+    padding: 5rem 4rem;
+  }
+  .form .lastLabel {
+    font-size: 10px;
+  }
+  .form-sendbtn {
+    font-size: 12px;
+  }
+
+  .slogen-1 {
+    font-size: 14px;
+  }
+  .slogen-2 {
+    font-size: 20px;
+    line-height: 3ch;
+  }
+  .slogen-3 {
+    font-size: 20px;
+    line-height: 3ch;
+  }
+  .form-heroSection {
+    object-fit: cover;
+  }
+}
+@media (max-width: 490px) {
+  .aboutz-content{
+    padding: 0;
+  }
+  .last h1 {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+
+  .hotel-last{
+    min-height: 15vh;
+  }
+  .hotel-last h1 {
+    font-size: 1rem;
+    line-height: 50px;
+  }
+
+  .footr-partners {
+    display: flex;
+    flex-direction: column;
+  }
+  .marquee h1{
+    font-size: 24px;
+  }
+  .footr {
+    display: flex;
+
+    justify-content: center;
+  }
+  .footr1 {
+    display: flex;
+
+    justify-content: center;
+  }
+  .footr-content {
+    width: fit-content;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footr-text {
+    font-size: 12px;
+  }
+  .navbar {
+    flex-direction: column;
+    padding: 0px 8px;
+  }
+  .wrapper {
+    max-width: 360px;
+    border-radius: 6px;
+  }
+  .about-intro-text {
+    max-width: 40ch;
+  }
+  .service-logo {
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+
+  .description {
+    width: 230px;
+    height: 49px;
+  }
+  .image-service-style {
+    width: 230px;
+  }
+  .image-quality-food {
+    width: 230px;
+  }
+  .section-detail {
+    flex-direction: column;
+  }
+  .section-left-content .section-detail-text {
+    max-width: 27ch;
+    font-size: 15px;
+  }
+  .section-right-content img {
+    width: 230px;
+  }
+  .feature-section {
+    /* border: 1px solid black; */
+    margin-bottom: 70px;
+  }
+  .abbrevation-logo {
+    margin-top: 10px;
+  }
+  .navbar {
+    width: 300px;
+  }
+  .heroContent {
+    left: 20%;
+  }
+  .heroTextSlogen {
+    font-size: 20px;
+  }
+  .section-left-content h1 {
+    font-size: 20px;
+  }
+  .about-logo {
+    font-size: 20px;
+  }
+  .footr {
+    margin-bottom: 0;
+  }
+
+  .slogen-1 {
+    font-size: 12px;
+  }
+  .slogen-2 {
+    font-size: 18px;
+    line-height: 3ch;
+  }
+  .slogen-3 {
+    font-size: 18px;
+    line-height: 3ch;
+  }
+  .designBox {
+    height: fit-content;
+  }
+  .hero-btn {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+  }
+  .grp-btn{
+    flex-direction: column;
+    gap: 0;
+  }
+  
+}
+@media (max-width: 363px) {
+  .wrapper {
+    width: 300px;
+  }
+  .about-intro-text {
+    max-width: 30ch;
+  }
+  .section-left-content h1 {
+    font-size: 20px;
+  }
+  .about-logo {
+    font-size: 20px;
+  }
+  .footr {
+    margin-bottom: 0;
+  }
+  .form-backcolor {
+    padding: 3rem 0.5rem;
+  }
+  .form .lastLabel {
+    font-size: 10px;
+  }
+  .form-sendbtn {
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .slogen-1 {
+    font-size: 10px;
+  }
+  .slogen-2 {
+    font-size: 16px;
+    line-height: 3ch;
+  }
+  .slogen-3 {
+    font-size: 16px;
+    line-height: 3ch;
+  }
+  .designBox {
+    height: fit-content;
+  }
+  .hero-btn {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    width: 95px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,113 @@
+.formhero {
+    position: relative;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 14px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .formhero h1 {
+    position: relative;
+    z-index: 100;
+    color: white;
+    font-size: 4rem;
+  }
+  .formContainer {
+    padding: 7rem 10rem;
+    background-color: rgba(33, 37, 41, 1);
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form label {
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+  .form input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #212529;
+    background-color: #fff;
+    border: 3px solid #a7b7c7;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 8px;
+  }
+  .form input:focus {
+    outline: 3px solid #15599d;
+  }
+  .form label a {
+    color: #0d6efd;
+    font-size: 1rem;
+  }
+  .form label a:hover {
+    color: #0a58ca;
+  }
+  .form .lastLabel {
+    margin-top: 20px;
+    text-align: justify;
+  }
+  .form button {
+    align-self: flex-start;
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    font-weight: 400;
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  footer {
+    margin-top: initial;
+    background-color: #ffffff;
+  }
+  
+  @media (max-width: 1280px) {
+    .formhero h1 {
+      font-size: 3rem;
+    }
+    .formContainer {
+      padding: 6rem 8rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    .formhero h1 {
+      font-size: 2.5rem;
+    }
+    .formContainer {
+      padding: 4rem 6rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .lastLabel {
+      padding: 0 8px;
+    }
+  
+    .formhero h1 {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+    .formContainer {
+      padding: 6rem 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .formContainer {
+      padding: 6rem 6px;
+    }
+    .formhero h1 {
+      font-size: 1.8rem;
+    }
+  }
+  
