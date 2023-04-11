@@ -361,7 +361,7 @@ h2 i{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/airline-images/world.jpg");
+  background: url("./airline-images/world.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
