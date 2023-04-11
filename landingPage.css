@@ -130,9 +130,8 @@ h2 i{
   left: 93%;
   top: 2%;
 }
-.wrapper {
+.main-wrapper {
   max-width: 1440px;
-  margin: auto;
 
 }
 .wrapper1 {
@@ -611,7 +610,7 @@ h2 i{
 }
 
 @media (max-width: 1600px) {
-  .wrapper {
+  .main-wrapper {
     width: 1300px;
   }
   .wrapper1 {
@@ -636,7 +635,7 @@ h2 i{
   .marquee h1{
     font-size: 30px;
   }
-  .wrapper {
+  .main-wrapper {
     max-width: 1000px;
   }
   .wrapper1 {
@@ -704,7 +703,7 @@ h2 i{
   .hotel-last h1{
     font-size: 2.5rem;
   }
-  .wrapper {
+  .main-wrapper {
     max-width: 900px;
   }
   .wrapper1 {
@@ -766,7 +765,7 @@ h2 i{
   .layout{
     height: fit-content;
   }
-  .wrapper {
+  .main-wrapper {
     max-width: 700px;
   }
   .wrapper1 {
@@ -893,7 +892,7 @@ h2 i{
     justify-content: space-evenly;
   }
 
-  .wrapper {
+  .main-wrapper {
     width: 600px;
   }
  
@@ -958,7 +957,7 @@ h2 i{
     justify-content: space-between;
   }
 
-  .wrapper {
+  .main-wrapper {
     max-width: 450px;
   }
   .callLogo {
@@ -1057,7 +1056,7 @@ h2 i{
     flex-direction: column;
     padding: 0px 8px;
   }
-  .wrapper {
+  .main-wrapper {
     max-width: 360px;
     border-radius: 6px;
   }
@@ -1144,7 +1143,7 @@ h2 i{
   
 }
 @media (max-width: 363px) {
-  .wrapper {
+  .main-wrapper {
     width: 300px;
   }
   .about-intro-text {

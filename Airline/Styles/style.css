@@ -486,7 +486,7 @@ footer {
 
 @media (max-width: 1440px) {
   .wrapper {
-    max-width: 1280px;
+    max-width: 1100px;
   }
   .hero-contianer-child h1 {
     font-size: 3rem;
@@ -547,7 +547,7 @@ footer {
     line-height: 22px;
   }
   .wrapper {
-    max-width: 1280px;
+    max-width: 900px;
   }
   .hero-contianer-child h1 {
     font-size: 2.5rem;
@@ -585,10 +585,7 @@ footer {
   .hero-contianer-child {
     min-height: 90vh;
   }
-  .wrapper {
-    /* max-width: 1024px; */
-    padding: 8px 4px;
-  }
+  
   .features-type {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -669,10 +666,8 @@ footer {
   .offer1 img {
     order: 1;
   }
-  .wrapper {
-    /* max-width: 1024px; */
-    padding: 0 2px;
-  }
+ 
+ 
   .hero-contianer-child h1 {
     font-size: 30px;
     line-height: 40px;
