@@ -132,6 +132,7 @@ h2 i{
 }
 .main-wrapper {
   max-width: 1440px;
+  margin: auto;
 
 }
 .wrapper1 {
