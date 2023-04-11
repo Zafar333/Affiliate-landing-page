@@ -825,6 +825,9 @@ h2 i{
   }
 }
 @media (max-width: 768px) {
+  .layout{
+    margin-bottom: 0;
+  }
   .room-category {
     padding: 16px 0px;
     font-size: 17px;
@@ -895,6 +898,7 @@ h2 i{
 
   .main-wrapper {
     width: 600px;
+   
   }
  
   .heroContent {
@@ -910,7 +914,7 @@ h2 i{
     margin-bottom: 0;
   }
   .form-backcolor {
-    padding: 7rem 6rem;
+    padding: 7rem 10rem;
     background-color: rgba(33, 37, 41, 1);
   }
   .form .lastLabel {
@@ -933,6 +937,9 @@ h2 i{
   }
 }
 @media (max-width: 600px) {
+  .form .lastLabel {
+    font-size: 14px;
+  }
   .form-topsection h1{
     font-size: 1.8rem;
 
@@ -987,11 +994,9 @@ h2 i{
     margin-bottom: 0;
   }
   .form-backcolor {
-    padding: 5rem 4rem;
+    padding: 5rem 1rem;
   }
-  .form .lastLabel {
-    font-size: 10px;
-  }
+ 
   .form-sendbtn {
     font-size: 12px;
   }
@@ -1012,12 +1017,15 @@ h2 i{
   }
 }
 @media (max-width: 490px) {
+  .form .lastLabel {
+    font-size: 14px;
+}
   .aboutz-content{
     padding: 0;
   }
   .last h1 {
     font-size: 1.5rem;
-    line-height: 40px;
+    line-height: 50px;
   }
 
   .hotel-last{
@@ -1025,7 +1033,7 @@ h2 i{
   }
   .hotel-last h1 {
     font-size: 1rem;
-    line-height: 50px;
+    line-height: 30px;
   }
 
   .footr-partners {
@@ -1160,14 +1168,12 @@ h2 i{
     margin-bottom: 0;
   }
   .form-backcolor {
-    padding: 3rem 0.5rem;
+    padding: 3rem 0rem;
   }
-  .form .lastLabel {
-    font-size: 10px;
-  }
+  
   .form-sendbtn {
     width: 80px;
-    height: 20px;
+    height: 35px;
     font-size: 10px;
   }
   .slogen-1 {
