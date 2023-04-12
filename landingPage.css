@@ -307,7 +307,7 @@ h2 i{
 }
 .grp-btn{
   display: flex;
-  gap: 30px;
+  gap: 45px;
 }
 .heroContent {
   width: fit-content;
@@ -763,7 +763,9 @@ h2 i{
   }
 }
 @media (max-width: 980px) {
-
+  .form-sendbtn{
+    height: 40px;
+  }
   .layout{
     height: fit-content;
   }
@@ -821,9 +823,11 @@ h2 i{
     border-radius: 8px;
     margin-top: 10px;
   }
+
   .footr {
     margin-bottom: 0;
   }
+ 
 }
 @media (max-width: 768px) {
   .layout{
@@ -841,7 +845,7 @@ h2 i{
 
 }
   .abbrevation-logo {
-    font-size: 18px;
+    font-size: 24px;
   }
   .hotel-last {
     width: 100%;
@@ -923,7 +927,7 @@ h2 i{
   }
   .form-sendbtn {
     width: 110px;
-    height: 30px;
+    height: 40px;
   }
   .slogen-1 {
     font-size: 16px;
@@ -1171,7 +1175,7 @@ h2 i{
   
   .form-sendbtn {
     width: 80px;
-    height: 35px;
+    height: 40px;
     font-size: 10px;
   }
   .slogen-1 {
