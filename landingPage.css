@@ -262,7 +262,7 @@ h2 i{
 .Hotel-heroSection::before{
   content: "";
   position: absolute;
-  background-image: url("./images/hotel-bg.png");
+  background-image: url("./images/hotel-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
