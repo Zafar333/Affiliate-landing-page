@@ -221,7 +221,7 @@ h2 i{
 }
 .footr-partners {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 .callLogo {
   text-decoration: none;
@@ -311,9 +311,10 @@ h2 i{
 }
 .heroContent {
   width: fit-content;
+  height: 105px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   z-index: 40;
 }
@@ -948,7 +949,7 @@ h2 i{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
   .footr-partners {
     display: flex;
@@ -1056,7 +1057,7 @@ h2 i{
   .footr-content {
     width: fit-content;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
   .footr-text {
     font-size: 12px;
@@ -1145,10 +1146,7 @@ h2 i{
     width: 100px;
     height: 40px;
   }
-  .grp-btn{
-    flex-direction: column;
-    gap: 0;
-  }
+ 
   
 }
 @media (max-width: 363px) {
