@@ -285,7 +285,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  min-height: 25vh;
+  min-height: 40ch;
   margin-top: 80px;
   margin-bottom: 80px;
   border-radius: 100px;
@@ -582,6 +582,9 @@ footer {
   }
 }
 @media (max-width: 1024px) {
+  .last{
+    min-height: 35ch;
+  }
   .hero-contianer-child {
     min-height: 90vh;
   }
@@ -649,6 +652,7 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  
   .hero-contianer-child {
     min-height: 90vh;
   }
@@ -681,10 +685,12 @@ footer {
     font-weight: 400;
   }
   .last {
-    border-radius: 0px;
+    margin:80px 20px;
+    min-height: 30ch;
+    border-radius: 50px;
   }
   .last h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 50px;
   }
   .footerr {
@@ -762,8 +768,12 @@ footer {
     width: 30ch;
     align-self: flex-start;
   }
+  .last{
+    min-height: 20ch;
+    border-radius: 25px;
+  }
   .last h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 40px;
   }
   .zip .side h1 {

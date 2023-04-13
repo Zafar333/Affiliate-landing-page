@@ -166,7 +166,7 @@ h2 i{
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  min-height: 25vh;
+  min-height: 40ch;
   margin-top: 80px;
   margin-bottom: 80px;
   border: 1px solid black;
@@ -366,7 +366,7 @@ h2 i{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 20vh;
+  min-height: 45ch;
   margin: 120px auto;
   border-radius: 100px;
   
@@ -702,6 +702,9 @@ h2 i{
     font-size: 2.5rem;
 
 }
+.hotel-last{
+  min-height: 35ch;
+}
   .hotel-last h1{
     font-size: 2.5rem;
   }
@@ -828,6 +831,7 @@ h2 i{
     margin-bottom: 0;
   }
  
+ 
 }
 @media (max-width: 768px) {
   .layout{
@@ -848,13 +852,16 @@ h2 i{
     font-size: 24px;
   }
   .hotel-last {
-    width: 100%;
-    border-radius: 0px;
+      margin: 80px 20px;
+      min-height: 30ch;
+      border-radius: 50px;
+      width: 93%;
+    
   }
   
   
   .hotel-last h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 50px;
   }
   .marquee h1{
@@ -1034,11 +1041,12 @@ h2 i{
   }
 
   .hotel-last{
-    min-height: 15vh;
+    min-height: 20ch;
+    border-radius: 25px;
   }
   .hotel-last h1 {
-    font-size: 1rem;
-    line-height: 30px;
+    font-size: 1.2rem;
+    line-height: 40px;
   }
 
   .footr-partners {
@@ -1154,6 +1162,7 @@ h2 i{
   
 }
 @media (max-width: 363px) {
+ 
   .main-wrapper {
     width: 300px;
   }
