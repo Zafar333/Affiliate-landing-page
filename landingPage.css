@@ -308,6 +308,7 @@ h2 i{
 .grp-btn{
   display: flex;
   gap: 45px;
+  border: 2px solid white;
 }
 .heroContent {
   width: fit-content;
