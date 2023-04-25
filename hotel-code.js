@@ -15,3 +15,10 @@ function goFormPage() {
     document.querySelector("input[name=zipField]").style.borderColor = "red";
   }
 }
+var formArr;
+function readInputFields(event) {
+  let { name, value } = event.target;
+  formArr = { ...formArr, [name]: value };
+
+  console.log(formArr);
+}

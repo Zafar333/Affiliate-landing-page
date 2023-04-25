@@ -24,6 +24,19 @@
   padding: 7rem 10rem;
   background-color: rgba(33, 37, 41, 7);
 }
+.form-child{
+  display: flex;
+  box-shadow: 0 1px 6px 0 rgba(255, 255, 255, 0.28);
+
+}
+.form-img{
+  flex: 1;
+  background-image: url("./images/hotel4.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
 .form-heroSection {
 
   width: 100%;
@@ -32,9 +45,10 @@
   align-items: center;
   justify-content: center;
  
-
 }
 .form {
+  flex: 4;
+  padding: 50px 20px;
   margin: 0 auto;
   width: 100%;
   height: 760px;
@@ -142,12 +156,11 @@ h2 i{
 .form-topsection{
     
     position: relative;
-    min-height: 20vh;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 14px;
-    background-color: rgba(0, 0, 0, 0.7);
 
 }
 .form-topsection h1{
@@ -474,7 +487,7 @@ h2 i{
   width: 100%;
   gap: 25px;
   min-height: 562px;
-  margin: 60px auto;
+  margin: 80px auto;
   /* border: 1px solid yellow; */
 }
 .section-left-content {
@@ -630,6 +643,13 @@ h2 i{
 
 
 @media (max-width: 1300px) {
+  .form-child{
+    flex-direction: column;
+  }
+  .form-img{
+    flex: initial;
+    height: 30ch;
+  }
   .heroTextSlogen {
     font-size: 40px;
   }
@@ -852,7 +872,6 @@ h2 i{
     font-size: 24px;
   }
   .hotel-last {
-      margin: 80px 20px;
       min-height: 30ch;
       border-radius: 50px;
       width: 93%;

@@ -47,81 +47,88 @@
     <!-- hero section end -->
 
     <!-- Form section Start -->
-    <section class="formhero">
-      <h1>Travel Any Corner of The World With Us</h1>
-    </section>
+    <section class="formhero"></section>
     <section class="formContainer">
-      <form class="form">
-        <label for="firstname"> First Name </label>
-        <input
-          type="text"
-          class="firstname"
-          name="firstname"
-          id="firstname"
-          placeholder="Your First Name"
-        />
-        <label for="lastname"> Last Name </label>
-        <input
-          type="text"
-          class="lastname"
-          name="lastname"
-          id="lastname"
-          placeholder="Your Last Name"
-        />
-        <label for="phonenumber"> Phone Number </label>
-        <input
-          type="text"
-          class="phonenumber"
-          name="phonenumber"
-          id="phonenumber"
-          placeholder="Your Phone Number"
-        />
-        <label for="state"> State </label>
-        <input
-          type="text"
-          class="state"
-          name="state"
-          id="state"
-          placeholder="Your State"
-        />
-        <label for="zipcode"> Zip Code </label>
-        <input
-          type="text"
-          class="zipcode"
-          name="zipcode"
-          id="zipcode"
-          placeholder="Your Zip Code"
-        />
-        <label for="age"> DOB/Age </label>
-        <input
-          type="text"
-          class="age"
-          name="age"
-          id="age"
-          placeholder="Your Age"
-        />
-        <label for="accept" class="lastLabel">
-          <input type="checkbox" id="accept" /> &nbsp; &nbsp;By selecting check
-          box, you represent that you are 18+ years of age and agree to the
-          <a href="#">Privacy Policy</a> and
-          <a href="#">Terms & Conditions.</a> By selecting the above check box
-          "you agree by your electronic signature that you give express written
-          consent to receive marketing communications regarding insurance
-          products and services including but not limited to Medicare Advantage,
-          Medicare supplement, and prescription drug plans by automatic dialing
-          system and pre-recorded calls and artificial voice messages from
-          EQTravels.com and one or more of its
-          <a href="#">Marketing Partners</a> at the phone number and e-mail
-          address provided by you, including wireless numbers, if applicable,
-          even if you have previously registered the provided number on the Do
-          Not Call Registry. SMS/MMS and data messaging rates may apply.” Your
-          consent is not required to get a quote or purchase. To receive quotes
-          without providing consent, please call at (888) 378-0750. Carrier data
-          rates may apply. TCPA LeadID's are used with the information for
-          compliance. Consent can be revoked
-        </label>
-        <button>Send Message</button>
-      </form>
+      <div class="form-child">
+        <div class="form-img"></div>
+        <form class="form">
+          <label for="firstname"> First Name </label>
+          <input
+            type="text"
+            class="firstname"
+            name="firstname"
+            id="firstname"
+            onchange="{readInput(event)}"
+            placeholder="Your First Name"
+          />
+          <label for="lastname"> Last Name </label>
+          <input
+            type="text"
+            class="lastname"
+            name="lastname"
+            id="lastname"
+            onchange="{readInput(event)}"
+            placeholder="Your Last Name"
+          />
+          <label for="phonenumber"> Phone Number </label>
+          <input
+            type="text"
+            class="phonenumber"
+            name="phonenumber"
+            id="phonenumber"
+            onchange="{readInput(event)}"
+            placeholder="Your Phone Number"
+          />
+          <label for="state"> State </label>
+          <input
+            type="text"
+            class="state"
+            name="state"
+            id="state"
+            onchange="{readInput(event)}"
+            placeholder="Your State"
+          />
+          <label for="zipcode"> Zip Code </label>
+          <input
+            type="text"
+            class="zipcode"
+            name="zipcode"
+            id="zipcode"
+            onchange="{readInput(event)}"
+            placeholder="Your Zip Code"
+          />
+          <label for="age"> DOB/Age </label>
+          <input
+            type="text"
+            class="age"
+            name="age"
+            id="age"
+            onchange="{readInput(event)}"
+            placeholder="Your Age"
+          />
+          <label for="accept" class="lastLabel">
+            <input type="checkbox" id="accept" /> &nbsp; &nbsp;By selecting
+            check box, you represent that you are 18+ years of age and agree to
+            the <a href="#">Privacy Policy</a> and
+            <a href="#">Terms & Conditions.</a> By selecting the above check box
+            "you agree by your electronic signature that you give express
+            written consent to receive marketing communications regarding
+            insurance products and services including but not limited to
+            Medicare Advantage, Medicare supplement, and prescription drug plans
+            by automatic dialing system and pre-recorded calls and artificial
+            voice messages from EQTravels.com and one or more of its
+            <a href="#">Marketing Partners</a> at the phone number and e-mail
+            address provided by you, including wireless numbers, if applicable,
+            even if you have previously registered the provided number on the Do
+            Not Call Registry. SMS/MMS and data messaging rates may apply.” Your
+            consent is not required to get a quote or purchase. To receive
+            quotes without providing consent, please call at (888) 378-0750.
+            Carrier data rates may apply. TCPA LeadID's are used with the
+            information for compliance. Consent can be revoked
+          </label>
+          <button>Send Message</button>
+        </form>
+      </div>
     </section>
     <!-- form section end -->
 
@@ -235,5 +242,5 @@
       </div>
     </div> -->
   </body>
-  <script src="controllers/index.js"></script>
+  <script src="./code/airlineForm-code.js"></script>
 </html>

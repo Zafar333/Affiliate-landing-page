@@ -1,11 +1,10 @@
 .formhero {
     position: relative;
-    min-height: 20vh;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 14px;
-    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .formhero h1 {
@@ -17,10 +16,29 @@
   .formContainer {
     padding: 7rem 10rem;
     background-color: rgba(33, 37, 41, 1);
+
+    
+  }
+  .form-img{
+    flex: 1;
+    background: url("../../airline-images/aeroplane1.jpeg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .form-child{
+    display: flex;
+    box-shadow: 0 1px 6px 0 rgba(255, 255, 255, 0.28);
+
+    
   }
   .form {
     display: flex;
+    /* border: 1px solid red; */
+    /* box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2); */
     flex-direction: column;
+    flex: 4;
+    padding: 50px 20px ;
   }
   .form label {
     color: #ffffff;
@@ -73,6 +91,15 @@
   }
   
   @media (max-width: 1280px) {
+    .form-img{
+      flex: initial;
+      height: 30ch;
+
+    }
+    .form-child{
+      flex-direction: column;
+    }
+ 
     .formhero h1 {
       font-size: 3rem;
     }
