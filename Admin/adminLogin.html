@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="../Admin/adminslogin.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form class="adminLoginForm">
+        <h1>Admin</h1>
+        <label>Username</label>
+        <input
+          type="text"
+          name="username"
+          required
+          onchange="{readAdmnInput(event)}"
+        />
+        <label>Password</label>
+
+        <input
+          type="password"
+          name="password"
+          required
+          onchange="{readAdmnInput(event)}"
+        />
+        <button class="admin-btn" onclick="AdminPostReq()">Login</button>
+        <a href="">IF you not have account then click here</a>
+      </form>
+    </div>
+  </body>
+  <script src="../Admin/adminlogin.js"></script>
+</html>
