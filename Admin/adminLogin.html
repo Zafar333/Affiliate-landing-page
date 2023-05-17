@@ -9,27 +9,33 @@
   </head>
   <body>
     <div class="form">
-      <form class="adminLoginForm">
+      <div class="adminLoginForm">
         <h1>Admin</h1>
         <label>Username</label>
         <input
+          class="username"
           type="text"
           name="username"
           required
-          onchange="{readAdmnInput(event)}"
+          placeholder="Enter your Username..."
+          onchange="readAdmnInput(event)"
         />
         <label>Password</label>
 
         <input
+          class="password"
           type="password"
           name="password"
+          placeholder="Enter Your Password..."
           required
-          onchange="{readAdmnInput(event)}"
+          onchange="readAdmnInput(event)"
         />
         <button class="admin-btn" onclick="AdminPostReq()">Login</button>
         <a href="">IF you not have account then click here</a>
-      </form>
+      </div>
     </div>
   </body>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="../Admin/adminlogin.js"></script>
 </html>

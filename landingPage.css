@@ -22,7 +22,11 @@
 .form-backcolor {
   
   padding: 7rem 10rem;
-  background-color: rgba(33, 37, 41, 7);
+  /* background-color: rgba(33, 37, 41, 7); */
+  background: url("../../airline-images/form-bg5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .form-child{
   display: flex;
@@ -71,12 +75,19 @@
 .form input {
   height: 48px;
   width: 100%;
-  border: 3px solid #a7b7c7;
-  border-radius: 0.25rem;
+  /* border: 1px solid #a7b7c7; */
+  
+  border: 2px solid gainsboro;
+  border-radius: 0.60rem;
+}
+.form input:focus {
+  outline: 2px solid #15599d;
+  
 }
 .form input.checkBox {
   width: 30px;
   height: 20px;
+  outline: none;
 }
 h2 i{
     cursor: pointer;
@@ -320,7 +331,10 @@ h2 i{
 }
 .grp-btn{
   display: flex;
+  /* width: 60vw; */
   gap: 30px;
+  /* justify-content: space-between; */
+  /* border: 1px solid red; */
 }
 .heroContent {
   width: fit-content;
@@ -784,6 +798,9 @@ h2 i{
   .layout{
     height: 650px;
   }
+  .form-backcolor{
+    padding: 4rem 6rem;
+  }
 }
 @media (max-width: 980px) {
   .form-sendbtn{
@@ -945,7 +962,7 @@ h2 i{
     margin-bottom: 0;
   }
   .form-backcolor {
-    padding: 7rem 10rem;
+    padding: 6rem 2rem;
     background-color: rgba(33, 37, 41, 1);
   }
   .form .lastLabel {

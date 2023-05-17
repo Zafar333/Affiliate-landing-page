@@ -55,7 +55,7 @@
         <h1 class="slogen-3">A hotel experience, unlike the rest</h1>
       </div>
 
-      <img class="hero-img" src="hotel bg.png" alt="" />
+      <!-- <img class="hero-img" src="../images/hotel-bg.jpg" alt="" /> -->
     </div>
 
     <!-- Hotel form is start -->
@@ -66,8 +66,8 @@
         <div class="form">
           <label>First name</label>
           <input
-            class="first-name"
-            name="firstName"
+            class="firstname"
+            name="firstname"
             type="text"
             onchange="{readInputFields(event)}"
             placeholder="Enter Your First Name"
@@ -75,18 +75,27 @@
 
           <label>Last Name</label>
           <input
-            class="last-name"
-            name="lastName"
+            class="lastname"
+            name="lastname"
             type="text"
             onchange="{readInputFields(event)}"
             placeholder="Enter Your Last Name"
           />
 
+          <label>Email</label>
+          <input
+            class="email"
+            name="email"
+            type="email"
+            onchange="{readInputFields(event)}"
+            placeholder="Enter Your Email"
+          />
+
           <label>Phone Number</label>
           <input
-            class="phn-no"
-            name="phnNo"
-            type="number"
+            class="phonenumber"
+            name="phonenumber"
+            type="text"
             placeholder="Enter Your Phone Number"
             onchange="{readInputFields(event)}"
           />
@@ -102,8 +111,8 @@
 
           <label>Zip Code</label>
           <input
-            class="zip-code"
-            name="zipCode"
+            class="zipcode"
+            name="zipcode"
             type="number"
             placeholder="Enter Zip Code"
             onchange="{readInputFields(event)}"
@@ -111,15 +120,21 @@
 
           <label>DOB/AGE</label>
           <input
-            class="dob-age"
-            name="dobAge"
+            class="age"
+            name="age"
             type="text"
-            placeholder="Enter Your  Date of Birth and Age "
+            placeholder="Enter Your Age "
             onchange="{readInputFields(event)}"
           />
 
           <label for="accept" class="lastLabel">
-            <input class="checkBox" type="checkbox" id="accept" />
+            <input
+              class="checkBox"
+              name="check"
+              type="checkbox"
+              id="accept"
+              onchange="readCheckBox(event)"
+            />
             &nbsp; &nbsp;By selecting check box, you represent that you are 18+
             years of age and agree to the <a href="#">Privacy Policy</a> and
             <a href="#">Terms &amp; Conditions.</a> By selecting the above check
@@ -138,7 +153,9 @@
             Carrier data rates may apply. TCPA LeadID's are used with the
             information for compliance. Consent can be revoked
           </label>
-          <button class="form-sendbtn">Send Message</button>
+          <button class="form-sendbtn" onclick="HotelFormPostReq()">
+            Submit
+          </button>
         </div>
       </div>
     </div>
@@ -197,6 +214,7 @@
       </div>
     </footer>
 
-    <script src="../hotel-code.js"></script>
+    <script src="../Hotel/hotelCode.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>

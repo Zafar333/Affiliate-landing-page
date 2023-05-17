@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../AdminDashboard/hotelPag.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="navnar">
+      <div class="main-nav">
+        <div class="navbar-left">
+          <div class="airline-option">
+            <a href="airlinePage.html">Airline Users</a>
+          </div>
+          <div class="hotel-option">
+            <a href="hotelPage.html">Hotel Users</a>
+          </div>
+        </div>
+        <div class="navbar-right">
+          <a onclick="logout()" href="#">Logout</a>
+        </div>
+      </div>
+    </header>
+    <input
+      onchange="hotelSearchEvent(event)"
+      class="search-bar"
+      type="text"
+      name="searchBar"
+      placeholder="Search by Phone Number"
+    />
+    <div class="hotel-container">
+      <div class="hotel-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Universal Lead id</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Contacts</th>
+              <th>State</th>
+              <th>ZipCode</th>
+              <th>Age</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody class="hotel-table"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="../AdminDashboard/hotelpagee.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>

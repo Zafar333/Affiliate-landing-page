@@ -1,9 +1,9 @@
-var AdminFormData;
-function readAdmnInput(event) {
+var superAdminData;
+function superAdmnInputRead(event) {
   const { name, value } = event.target;
-  AdminFormData = { ...AdminFormData, [name]: value };
+  superAdminData = { ...superAdminData, [name]: value };
 }
-async function AdminPostReq() {
+async function superAdminPostReq() {
   let usernameRef = document.querySelector(".username");
   let passwordRef = document.querySelector(".password");
   usernameRef.value = "";
@@ -11,12 +11,12 @@ async function AdminPostReq() {
 
   try {
     const response = await axios.post(
-      "http://localhost:5000/auth/adminLogin",
-      AdminFormData
+      "http://localhost:5000/auth/superadminLogin",
+      superAdminData
     );
     if (response.data.status == 200) {
       localStorage.setItem("token", response.data.token);
-      window.location.href = "../AdminDashboard/airlinePage.html";
+      window.location.href = "../SuperAdminDashboard/airlinepage.html";
     } else {
       alert("Plese Enter Correct username and password");
     }

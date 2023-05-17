@@ -1,7 +1,6 @@
 import express from "express";
-import { airlineUserSchema } from "../Database/auth/UserSchema.js";
-
-export const airlineUsersControllerPost = async (req, res) => {
+import { HotelUserSchema } from "../Database/auth/HotelSchema.js";
+export const hotelUsersControllerPost = async (req, res) => {
   try {
     const {
       firstname,
@@ -23,7 +22,7 @@ export const airlineUsersControllerPost = async (req, res) => {
       age &&
       check
     ) {
-      const airlineData = new airlineUserSchema({
+      const hotelData = new HotelUserSchema({
         firstname,
         lastname,
         email,
@@ -33,13 +32,16 @@ export const airlineUsersControllerPost = async (req, res) => {
         age,
         check,
       });
-      const saveUser = await airlineData.save();
-
-      res.json({ status: 200, msg: "data save sucessfully", data: saveUser });
+      const saveUser = await hotelData.save();
+      res.status(200).json({
+        status: 200,
+        msg: "data save sucessfully",
+        hoteldata: saveUser,
+      });
     } else {
-      res.json({ status: 401, msg: "please send valid data" });
+      res.status(401).json({ msg: "please send valid data" });
     }
   } catch (error) {
-    res.status(500).json({ status: 500, msg: error.message });
+    res.json({ status: 500, msg: error.message });
   }
 };

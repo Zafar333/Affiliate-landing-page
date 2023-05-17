@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../SuperAdminDashboard/hotelpag.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="navnar">
+      <div class="main-nav">
+        <div class="navbar-left">
+          <div class="airline-option">
+            <a href="airlinePage.html">Airline Users</a>
+          </div>
+          <div class="hotel-option">
+            <a href="hotelPage.html">Hotel Users</a>
+          </div>
+        </div>
+        <div class="navbar-right">
+          <a onclick="logout()" href="#">Logout</a>
+        </div>
+      </div>
+    </header>
+    <input
+      onchange="hotelSearchevent(event)"
+      class="search-bar"
+      type="text"
+      name="searchBar"
+      placeholder="Search by Phone Number"
+    />
+    <div class="hotel-container">
+      <div class="hotel-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Universal Lead id</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Contacts</th>
+              <th>State</th>
+              <th>ZipCode</th>
+              <th>Age</th>
+              <th>Time</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody class="hotel-superadmintable"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Hotel edit modal form is start -->
+    <div class="mainModal">
+      <a href="">
+        <img
+          src="../SuperAdminDashboard/icons/red-x-line-icon.svg"
+          style="float: left"
+          width="50px"
+          height="50px"
+          alt=""
+          onclick="hideModal()"
+        />
+      </a>
+      <form class="hotelEditModal">
+        <h1>Hotel Edit Modal</h1>
+        <label for="">Universal Id</label>
+        <input
+          placeholder="Enter Your Universal Id..."
+          type="text"
+          class="universalLeadId"
+          name="universalLeadId"
+          onchange="hotelinputEditEvent(event)"
+        />
+        <label for="">First Name</label>
+        <input
+          type="text"
+          class="firstname"
+          name="firstname"
+          onchange="hotelinputEditEvent(event)"
+          placeholder="Enter Your First Name..."
+        />
+        <label for="">Last Name</label>
+
+        <input
+          type="text"
+          class="lastname"
+          name="lastname"
+          onchange="hotelinputEditEvent(event)"
+          placeholder="Enter Your Last Name..."
+        />
+        <label for="">Email</label>
+
+        <input
+          type="text"
+          class="email"
+          name="email"
+          onchange="hotelinputEditEvent(event)"
+          placeholder="Enter Your Email..."
+        />
+        <label for="">Phone Number</label>
+
+        <input
+          type="text"
+          class="phonenumber"
+          name="phonenumber"
+          onchange="hotelinputEditEvent(event)"
+          placeholder="Enter Your Phone Number..."
+        />
+        <label for="">State</label>
+
+        <input
+          type="text"
+          name="state"
+          class="state"
+          onchange="hotelinputEditEvent(event)"
+          placeholder="Enter Your State..."
+        />
+        <label for="">Zipcode</label>
+
+        <input
+          type="number"
+          class="zipcode"
+          name="zipcode"
+          onchange="hotelinputEditEvent(event)"
+          placeholder="Enter Your Zipcode..."
+        />
+        <label for="">Age</label>
+
+        <input
+          type="text"
+          class="age"
+          name="age"
+          onchange="hotelinputEditEvent(event)"
+          placeholder="Enter Your Age..."
+        />
+        <label for="">Date & Time</label>
+
+        <input
+          placeholder="Enter Your Date & Time..."
+          class="createDate"
+          type="datetime"
+          name="createdAt"
+          onchange="hotelinputEditEvent(event)"
+        />
+        <div class="btn-box">
+          <button class="update-btn" onclick="updateReq()">Update</button>
+        </div>
+      </form>
+    </div>
+    <!-- Eit Modal Form End -->
+
+    <script src="../SuperAdminDashboard/hotelpagee.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
