@@ -28,16 +28,26 @@ tr th{
 .airline-container{
     position: relative;
     width: 90%;
-    height: 70vh;
+    height: 60vh;
     /* border: 1px solid black; */
     margin: auto;
     /* border: 1px solid black; */
   }
   .airline-scroll{
     width: 80%;
-    height: 70vh;
+    height: 60vh;
     overflow: auto;
     margin: auto;
+    
+}
+.airline-text{
+    margin-top: 1%;
+    color:orange;
+    text-align: center;
+    font-size: 30px;
+    font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
     
 }
 

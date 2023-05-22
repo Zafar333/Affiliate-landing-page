@@ -27,16 +27,26 @@ tr th{
 .hotel-container{
     position: relative;
     width: 90%;
-    height: 70vh;
+    height: 60vh;
     /* border: 1px solid black; */
     margin: auto;
     /* border: 1px solid black; */
   }
   .hotel-scroll{
     width: 80%;
-    height: 70vh;
+    height: 60vh;
     overflow: auto;
     margin: auto;
+    
+}
+.hotel-text-logo{
+    margin-top: 1%;
+    color:orange;
+    text-align: center;
+    font-size: 30px;
+    font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+    Segoe UI Symbol, Noto Color Emoji;
     
 }
 .main-nav{
@@ -113,10 +123,11 @@ tr th{
 /* Edit Modal CSS Start */
 
 .hotelEditModal{
+    border-radius: 15px;
     margin: auto;
     background-color: white;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
-    width: 750px;
+    width: 60%;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -124,13 +135,13 @@ tr th{
 
 }
 .hotelEditModal input{
+    margin: auto;
     height: 40px;
     border: none;
     outline: 2px solid;
     outline-color: rgb(199, 169, 244);
     margin-bottom: 15px;
     width: 90%;
-    margin-left: 35px;
     font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Noto Color Emoji;
@@ -146,7 +157,7 @@ tr th{
     
 }
 .hotelEditModal label{
-    margin-left: 35px;
+    margin-left: 5%;
     font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Noto Color Emoji;
@@ -160,6 +171,7 @@ tr th{
     height: 40px;
     color: white;
     background-color: orange;
+    margin-bottom: 1.5%;
     
 }
 .btn-box{
