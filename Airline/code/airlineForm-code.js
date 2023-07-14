@@ -2,6 +2,7 @@ var airlineForm;
 function readInput(event) {
   let { name, value } = event.target;
   airlineForm = { ...airlineForm, [name]: value };
+  console.log(airlineForm);
   forminputValidation(event);
 }
 function readCheckBox(event) {
@@ -10,11 +11,6 @@ function readCheckBox(event) {
 }
 // flight form post request function is start
 async function AirlineUserPostReq() {
-  let data = await axios.post(
-    "http://localhost:5000/users/airline",
-    airlineForm
-  );
-
   let firstnameRef = document.querySelector(".firstname");
   let lastnameRef = document.querySelector(".lastname");
   let stateRef = document.querySelector(".state");
@@ -24,6 +20,16 @@ async function AirlineUserPostReq() {
   let emailRef = document.querySelector(".email");
   let checkboxRef = document.querySelector(".checkbox");
 
+  let data = await axios.post(
+    "http://localhost:5000/users/airline",
+    airlineForm
+  );
+
+  if (data.data.status == 200) {
+    alert(data.data.msg);
+  } else {
+    alert(data.data.msg);
+  }
   zipcodeRef.value = "";
   firstnameRef.value = "";
   lastnameRef.value = "";

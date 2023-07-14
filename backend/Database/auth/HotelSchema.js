@@ -7,7 +7,7 @@ const HotelUserData = new mongoose.Schema(
     phonenumber: String,
     state: String,
     zipcode: String,
-    age: String,
+    countPerson: String,
     check: Boolean,
     universalLeadId: String,
     ipAddress: String,

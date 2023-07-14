@@ -8,20 +8,11 @@ export const hotelUsersControllerPost = async (req, res) => {
       phonenumber,
       state,
       zipcode,
-      age,
+      countPerson,
       check,
       email,
     } = req.body;
-    if (
-      firstname &&
-      lastname &&
-      email &&
-      phonenumber &&
-      state &&
-      zipcode &&
-      age &&
-      check
-    ) {
+    if (firstname && lastname && email && phonenumber && check) {
       const hotelData = new HotelUserSchema({
         firstname,
         lastname,
@@ -29,17 +20,16 @@ export const hotelUsersControllerPost = async (req, res) => {
         phonenumber,
         state,
         zipcode,
-        age,
+        countPerson,
         check,
       });
       const saveUser = await hotelData.save();
-      res.status(200).json({
+      res.json({
         status: 200,
         msg: "data save sucessfully",
-        hoteldata: saveUser,
       });
     } else {
-      res.status(401).json({ msg: "please send valid data" });
+      res.json({ status: 401, msg: "please send valid data" });
     }
   } catch (error) {
     res.json({ status: 500, msg: error.message });

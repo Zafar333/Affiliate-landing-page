@@ -13,8 +13,9 @@ async function HotelFormPostReq() {
 
   if (response.data.status == 200) {
     alert(response.data.msg);
-  } else {
-    alert(response.data.msg);
+  }
+  if (response.data.status == 401) {
+    alert("Data not submit please must fill mandatory fields");
   }
 
   let firstnameRef = document.querySelector(".firstname");

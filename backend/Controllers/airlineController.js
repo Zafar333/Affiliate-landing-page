@@ -9,20 +9,11 @@ export const airlineUsersControllerPost = async (req, res) => {
       phonenumber,
       state,
       zipcode,
-      age,
+      flightDestination,
       check,
       email,
     } = req.body;
-    if (
-      firstname &&
-      lastname &&
-      email &&
-      phonenumber &&
-      state &&
-      zipcode &&
-      age &&
-      check
-    ) {
+    if (firstname && lastname && email && phonenumber && check) {
       const airlineData = new airlineUserSchema({
         firstname,
         lastname,
@@ -30,12 +21,12 @@ export const airlineUsersControllerPost = async (req, res) => {
         phonenumber,
         state,
         zipcode,
-        age,
+        flightDestination,
         check,
       });
       const saveUser = await airlineData.save();
 
-      res.json({ status: 200, msg: "data save sucessfully", data: saveUser });
+      res.json({ status: 200, msg: "data save sucessfully" });
     } else {
       res.json({ status: 401, msg: "please send valid data" });
     }

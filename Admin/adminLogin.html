@@ -18,7 +18,7 @@
           name="username"
           required
           placeholder="Enter your Username..."
-          onchange="readAdmnInput(event)"
+          onchange="readdInput(event)"
         />
         <label>Password</label>
 
@@ -28,7 +28,7 @@
           name="password"
           placeholder="Enter Your Password..."
           required
-          onchange="readAdmnInput(event)"
+          onchange="readdInput(event)"
         />
         <button class="admin-btn" onclick="AdminPostReq()">Login</button>
         <a href="">IF you not have account then click here</a>
@@ -36,6 +36,36 @@
     </div>
   </body>
 
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="../Admin/adminlogin.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js">
+
+    var AdminFormData;
+    function readdInput(event) {
+      const { name, value } = event.target;
+      AdminFormData = { ...AdminFormData, [name]: value };
+      console.log("input",AdminFormData)
+    }
+
+    const AdminPostReq = async () => {
+
+      let usernameRef = document.querySelector(".username");
+      let passwordRef = document.querySelector(".password");
+
+      try {
+        const response = await axios.post(
+          "http://localhost:5000/auth/adminLogin",
+          AdminFormData
+        );
+        if (response.data.status == 200) {
+          localStorage.setItem("token", response.data.token);
+          window.location.href = "../AdminDashboard/airlinePage.html";
+        } else {
+          alert("Plese Enter Correct username and password");
+        }
+      } catch (error) {
+        alert(error);
+      }
+      usernameRef.value = "";
+      passwordRef.value = "";
+    };
+  </script>
 </html>

@@ -21,7 +21,7 @@ window.onload = async function () {
          <td>${item.phonenumber}</td>
          <td>${item.state}</td>
          <td>${item.zipcode}</td>
-         <td>${item.age}</td>
+         <td>${item.countPerson}</td>
          <td>${item.createdAt}</td>
          
      </tr>
@@ -63,7 +63,7 @@ async function hotelSearchEvent(event) {
          <td>${item.phonenumber}</td>
          <td>${item.state}</td>
          <td>${item.zipcode}</td>
-         <td>${item.age}</td>
+         <td>${item.countPerson}</td>
          <td>${item.createdAt}</td>
          
      </tr>

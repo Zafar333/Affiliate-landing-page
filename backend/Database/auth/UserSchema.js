@@ -7,7 +7,7 @@ const airlineUserData = new mongoose.Schema(
     phonenumber: String,
     state: String,
     zipcode: String,
-    age: String,
+    flightDestination: String,
     check: Boolean,
     universalLeadId: String,
     ipAddress: String,

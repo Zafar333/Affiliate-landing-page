@@ -22,7 +22,7 @@ window.onload = async function () {
          <td>${item.phonenumber}</td>
          <td>${item.state}</td>
          <td>${item.zipcode}</td>
-         <td>${item.age}</td>
+         <td>${item.flightDestination}</td>
          <td>${item.createdAt}</td>
          <td><button class="edit-btn" onclick="opnEditModal('${index}')">Edit</button>
          <button class="dlete-btn" onclick="dleteReq('${item._id}')">Delete</button>
@@ -65,7 +65,7 @@ async function SearchEvent(event) {
          <td>${item.phonenumber}</td>
          <td>${item.state}</td>
          <td>${item.zipcode}</td>
-         <td>${item.age}</td>
+         <td>${item.flightDestination}</td>
          <td>${item.createdAt}</td>
          <td><button class="edit-btn" onclick="opnEditModal('${index}')">Edit</button>
          <button class="dlete-btn"  onclick="dleteReq('${item._id}')">Delete</button>
@@ -120,7 +120,7 @@ function opnEditModal(indx) {
   emailRef.value = AirlineData[indx].email;
   phonenumberRef.value = AirlineData[indx].phonenumber;
   stateRef.value = AirlineData[indx].state;
-  ageRef.value = AirlineData[indx].age;
+  ageRef.value = AirlineData[indx].flightDestination;
   createDateRef.value = AirlineData[indx].createdAt;
 }
 

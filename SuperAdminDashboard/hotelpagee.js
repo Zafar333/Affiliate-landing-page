@@ -23,7 +23,7 @@ window.onload = async function () {
          <td>${item.phonenumber}</td>
          <td>${item.state}</td>
          <td>${item.zipcode}</td>
-         <td>${item.age}</td>
+         <td>${item.countPerson}</td>
          <td>${item.createdAt}</td>
          <td ><button class="edit-btn" onclick=" hotelopnEditModal('${index}')">Edit</button>
          <button class="dlete-btn" onclick="deleteReq('${item._id}')">Delete</button>
@@ -65,7 +65,7 @@ async function hotelSearchevent(event) {
          <td>${item.phonenumber}</td>
          <td>${item.state}</td>
          <td>${item.zipcode}</td>
-         <td>${item.age}</td>
+         <td>${item.countPerson}</td>
          <td>${item.createdAt}</td>
          <td><button class="edit-btn" onclick=" hotelopnEditModal('${index}')">Edit</button>
           <button class="dlete-btn" onclick="deleteReq('${item._id}')">Delete</button>
@@ -121,7 +121,7 @@ function hotelopnEditModal(indx) {
   emailRef.value = HotelData[indx].email;
   phonenumberRef.value = HotelData[indx].phonenumber;
   stateRef.value = HotelData[indx].state;
-  ageRef.value = HotelData[indx].age;
+  ageRef.value = HotelData[indx].countPerson;
   createDateRef.value = HotelData[indx].createdAt;
 }
 
